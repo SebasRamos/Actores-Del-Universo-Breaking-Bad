@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Para esto utilicé esta página: https://www.tuempresaonline.com.ve/2020/10/paleta-de-colores-verde-en-html.html */
+
+body {
+    background-image: linear-gradient(135deg, #98FB98, #00FF00, #32CD32, #2E8B57, #00FA9A, #00FF7F, #006400, #556B2F);
+    background-size: 500%;
+    animation: bganimation 8s infinite;
+    color: white;
+}
+
+/* Fuente de letra utilizada */
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+  }
+
+.hero-imgs {
+  width: 400px;
+  margin-bottom: 200px;
+}
+
+.hero h2 {
+    font-family: "San Francisco", sans-serif;
+    font-size: 75px;
+    text-align: center;
+    margin: 200px 0;
+}
+
+/* Tabla de personajes */
+
+.table {
+  padding: 35px;
+  border-radius: 200px;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 25px;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #0fd68a ;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #29cf69;}
+  
+  #customers tr:hover {color: black; background-color: #ffffffd2;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(4, 88, 21);
+    color: white;
+  }
+
+footer h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "San Francisco", sans-serif;
+}
+
+/*Animación para el fondo*/
+
+@keyframes bganimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
